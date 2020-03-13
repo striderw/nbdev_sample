@@ -1,7 +1,7 @@
 {
   "nbdev_sample": {
     "Overview": "/",
-    "module name here": "/core",
+    "module nbdev_sample": "/core",
     "Title": "/practice"
   }
 }

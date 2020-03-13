@@ -10,7 +10,7 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: module name here
+      title: module nbdev_sample
       url: /core
     - output: web,pdf
       title: Title
