@@ -24,17 +24,5 @@ Fill me in please! Don't forget code examples:
 
 
 ```python
-nbdev_sample.say_hello("liuliu")
+#nbdev_sample.say_hello("liuliu")
 ```
-
-
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-24-0e373bba8b93> in <module>
-    ----> 1 nbdev_sample.say_hello("liuliu")
-    
-
-    NameError: name 'nbdev_sample' is not defined
-
