@@ -32,17 +32,9 @@ nbdev_sample.say_hello("liuliu")
 
     NameError                                 Traceback (most recent call last)
 
-    <ipython-input-10-0e373bba8b93> in <module>
+    <ipython-input-16-0e373bba8b93> in <module>
     ----> 1 nbdev_sample.say_hello("liuliu")
     
 
     NameError: name 'nbdev_sample' is not defined
 
-
-```python
-!nbdev_build_docs
-```
-
-    converting: D:\ws\python\jupyter\nbdev_sample\index.ipynb
-    converting D:\ws\python\jupyter\nbdev_sample\index.ipynb to README.md
-    
