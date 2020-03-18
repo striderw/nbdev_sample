@@ -49,6 +49,39 @@ description: "summary"
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+<span class="c1">#hide</span>
+<span class="kn">from</span> <span class="nn">nbdev.export</span> <span class="k">import</span> <span class="o">*</span>
+<span class="n">notebook2script</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Converted 00_core.ipynb.
+Converted index.ipynb.
+Converted practice.ipynb.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>nbdev_install_git_hooks
 </pre></div>
 
@@ -206,9 +239,66 @@ Converted practice.ipynb.
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>converting: D:\ws\python\jupyter\nbdev_sample\index.ipynb
-converting: D:\ws\python\jupyter\nbdev_sample\practice.ipynb
+<pre>converting: D:\ws\python\jupyter\nbdev_sample\practice.ipynb
+converting: D:\ws\python\jupyter\nbdev_sample\index.ipynb
+converting: D:\ws\python\jupyter\nbdev_sample\00_core.ipynb
 converting D:\ws\python\jupyter\nbdev_sample\index.ipynb to README.md
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Run-tests">Run tests<a class="anchor-link" href="#Run-tests"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>nbdev_test_nbs
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>testing: D:\ws\python\jupyter\nbdev_sample\index.ipynb
+testing: D:\ws\python\jupyter\nbdev_sample\practice.ipynb
+Error in D:\ws\python\jupyter\nbdev_sample\practice.ipynb:
+Cell execution timed out
+testing: D:\ws\python\jupyter\nbdev_sample\00_core.ipynb
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Traceback (most recent call last):
+  File &#34;d:\env\python37\lib\runpy.py&#34;, line 193, in _run_module_as_main
+    &#34;__main__&#34;, mod_spec)
+  File &#34;d:\env\python37\lib\runpy.py&#34;, line 85, in _run_code
+    exec(code, run_globals)
+  File &#34;D:\env\Python37\Scripts\nbdev_test_nbs.exe\__main__.py&#34;, line 9, in &lt;module&gt;
+  File &#34;d:\env\python37\lib\site-packages\fastscript\core.py&#34;, line 73, in _f
+    func(**args.__dict__)
+  File &#34;d:\env\python37\lib\site-packages\nbdev\cli.py&#34;, line 70, in nbdev_test_nbs
+    raise Exception(msg + &#39;\n&#39;.join([f.name for p,f in zip(passed,files) if not p]))
+Exception: The following notebooks failed:
+practice.ipynb
 </pre>
 </div>
 </div>
